@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/diary"
+    app:startDestination="@id/menuRation">
+
+    <fragment
+        android:id="@+id/menuProfile"
+        android:name="com.example.ficl_v4.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/menuRation"
+        android:name="com.example.ficl_v4.RationFragment"
+        android:label="Ration"
+        tools:layout="@layout/fragment_ration" />
+    <fragment
+        android:id="@+id/menuFoods"
+        android:name="com.example.ficl_v4.ProductsFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_products" />
+</navigation>

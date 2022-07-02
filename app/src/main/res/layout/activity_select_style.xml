@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_select_eating_habits"
+    tools:context=".SelectStyleActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/select_eating_habits"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageDrying"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/black"
+        android:contentDescription="@string/app_name"
+        android:onClick="searchFirst"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/drying" />
+
+    <ImageButton
+        android:id="@+id/imageMaintenance"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginEnd="200dp"
+        android:background="@color/black"
+        android:contentDescription="@string/app_name"
+        android:onClick="searchSecond"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageDrying"
+        app:srcCompat="@drawable/maintenance" />
+
+    <ImageButton
+        android:id="@+id/imageMass"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="-40dp"
+        android:background="@color/black"
+        android:contentDescription="@string/app_name"
+        android:onClick="searchThird"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMaintenance"
+        app:srcCompat="@drawable/mass" />
+
+    <TextView
+        android:id="@+id/habit1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/drying"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageMaintenance"
+        app:layout_constraintEnd_toStartOf="@+id/imageDrying"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/habit2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/maintenance"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageMass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageMaintenance"
+        app:layout_constraintTop_toBottomOf="@+id/imageDrying" />
+
+    <TextView
+        android:id="@+id/habit3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/mass"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageMass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMaintenance" />
+
+    <Button
+        android:id="@+id/nextHabits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/button_select_eating_habits"
+        android:onClick="move"
+        android:text="@string/button_next"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

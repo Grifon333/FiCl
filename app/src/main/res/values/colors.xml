@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#E8E8E8</color>
+
+    <color name="log_in">#FFD24C</color>
+
+    <!--bg-->
+    <color name="bg_main">#92B4EC</color>
+    <color name="bg_signup">#F9C8AC</color>
+    <color name="bg_login">#EEFFE8</color>
+    <color name="bg_scores">#F7D9FC</color>
+    <color name="bg_select_eating_habits">#8e52ff</color>
+    <color name="bg_select_activity">#93fac9</color>
+    <color name="bg_element_select_activity">#ffb8e0ff</color>
+    <color name="bg_diary">#33ad31</color>
+    <color name="bg_period_day">#FFE69A</color>
+    <color name="bg_add_product">#deffbf</color>
+    <color name="bg_update_product">#feffbf</color>
+    <color name="bg_profile">#dedede</color>
+    <color name="bg_fill_diary">#cfedfa</color>
+
+    <color name="button_signup">#35DC46</color>
+    <color name="button_login">#AEA7FF</color>
+    <color name="button_scores">#4AC6FB</color>
+    <color name="button_select_eating_habits">#3f00b5</color>
+    <color name="button_update_product">#33ad31</color>
+    <color name="button_delete_product">#fc4c4c</color>
+    <color name="button_reload">#f7fa39</color>
+</resources>
